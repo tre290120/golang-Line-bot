@@ -31,6 +31,7 @@ func DoService(c *gin.Context) {
 					str = list(userID)
 				} else {
 					str = save(userID, message.Text)
+					str = message.Text + " " + str
 				}
 				_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(str)).Do()
 				if err != nil {
