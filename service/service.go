@@ -2,7 +2,6 @@ package service
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"simplebot/db"
 
@@ -35,12 +34,6 @@ func DoService(c *gin.Context) {
 				}
 				_, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(str)).Do()
 				if err != nil {
-					log.Print(err)
-				}
-			case *linebot.StickerMessage:
-				replyMessage := fmt.Sprintf(
-					"sticker id is %s, stickerResourceType is %s", message.StickerID, message.StickerResourceType)
-				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(replyMessage)).Do(); err != nil {
 					log.Print(err)
 				}
 			}
