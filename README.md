@@ -1,7 +1,7 @@
 # golang-Line-bot
 A simple Line bot with golang
 
-**Tech stack
+##Tech stack
 1. ngrok
 2. docker
 3. line sdk
@@ -12,7 +12,7 @@ A simple Line bot with golang
 8. gin
 9. mongo
 
-**How to use
+##How to use
 
 build golang code
 ```
@@ -56,7 +56,7 @@ Run golang binary
 -c:path to line_config 
 -p:the port ngrok forward to
 
-**Test
+##Test
 1. open your line and add the bot as freind
 2. send any message
 3. you will receive the echo message
