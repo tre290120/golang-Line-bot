@@ -34,14 +34,13 @@ Run ngrok
 ngrok http 4000
 ```
 ngrok will give you a link and the link forward http request to localhost:4000
-![ngrok](https://user-images.githubusercontent.com/28688049/198027967-e9339925-d219-47dc-9fbc-a1b947daee29.png)
-Set the link/callback as webhook url in your [line developer](https://developers.line.biz/zh-hant/ "link") setting page
+![ngrok](https://user-images.githubusercontent.com/28688049/198027967-e9339925-d219-47dc-9fbc-a1b947daee29.png)  
+Set "link/callback" as webhook url in your [line developer](https://developers.line.biz/zh-hant/ "link") setting page  
 
-
-Get your line config including channel secret and channel token
-Please refer to below link to get a token
-https://developers.line.biz/en/reference/messaging-api/#issue-shortlived-channel-access-token
-Get your channel secret in your basic setting section in the [line developer](https://developers.line.biz/zh-hant/ "link") sites
+Get your line config including channel secret and channel token  
+Please refer to below link to get a token  
+https://developers.line.biz/en/reference/messaging-api/#issue-shortlived-channel-access-token  
+Get your channel secret in your basic setting section at [line developer](https://developers.line.biz/zh-hant/ "link")  
 Create a yaml file "line_config.yaml" with the format
 ```
 line:
@@ -53,7 +52,7 @@ Run golang binary
 ```
 ./bot -c $(pwd) -p 4000
 ```
--c:path to line_config 
+-c:path to line_config   
 -p:the port ngrok forward to
 
 ## Test
