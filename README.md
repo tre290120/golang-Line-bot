@@ -35,7 +35,7 @@ ngrok http 4000
 ```
 ngrok will give you a link and the link forward http request to localhost:4000
 ![ngrok](https://user-images.githubusercontent.com/28688049/198027967-e9339925-d219-47dc-9fbc-a1b947daee29.png)
-Set the link as webhook url in your [line developer](https://developers.line.biz/zh-hant/ "link") setting page
+Set the link/callback as webhook url in your [line developer](https://developers.line.biz/zh-hant/ "link") setting page
 
 
 Get your line config including channel secret and channel token
